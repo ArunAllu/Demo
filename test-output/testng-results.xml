@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-26T23:53:12 IST" name="Suite" finished-at="2025-06-26T23:53:49 IST" duration-ms="37376">
+    <groups>
+    </groups>
+    <test started-at="2025-06-26T23:53:12 IST" name="test2" finished-at="2025-06-26T23:53:12 IST" duration-ms="18">
+    </test> <!-- test2 -->
+    <test started-at="2025-06-26T23:53:12 IST" name="test3" finished-at="2025-06-26T23:53:12 IST" duration-ms="18">
+      <class name="com.tripgain.testscripts.TC_54_BusinessClass_VerifySearchFunctionalityForOneWay">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.tripgain.testscripts.TC_54_BusinessClass_VerifySearchFunctionalityForOneWay@7c9d8e2]" started-at="2025-06-26T23:53:49 IST" name="afterSuite" finished-at="2025-06-26T23:53:52 IST" duration-ms="2637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.tripgain.testscripts.TC_54_BusinessClass_VerifySearchFunctionalityForOneWay -->
+    </test> <!-- test3 -->
+    <test started-at="2025-06-26T23:53:12 IST" name="test1" finished-at="2025-06-26T23:53:12 IST" duration-ms="18">
+    </test> <!-- test1 -->
+    <test started-at="2025-06-26T23:53:12 IST" name="test" finished-at="2025-06-26T23:53:49 IST" duration-ms="37376">
+      <class name="com.tripgain.testscripts.TC_54_BusinessClass_VerifySearchFunctionalityForOneWay">
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.testscripts.TC_54_BusinessClass_VerifySearchFunctionalityForOneWay@7c9d8e2]" started-at="2025-06-26T23:53:13 IST" name="launchApplication" finished-at="2025-06-26T23:53:17 IST" duration-ms="3903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.testscripts.TC_54_BusinessClass_VerifySearchFunctionalityForOneWay.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@398dada8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.testscripts.TC_54_BusinessClass_VerifySearchFunctionalityForOneWay@7c9d8e2]" started-at="2025-06-26T23:53:17 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-06-26T23:53:48 IST" duration-ms="30617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Origin=BLR, Destination=GOI, StopsIndex=1, UserName=testtraveller98@tripgain.com, FareType=Super6E, TestRun=, Class=Business, Adults=3, SelectFlightIndex=1, URL=https://v3.tripgain.com/login, Reason=Better Flight Time, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.testscripts.TC_54_BusinessClass_VerifySearchFunctionalityForOneWay@7c9d8e2]" started-at="2025-06-26T23:53:48 IST" name="tearDown" finished-at="2025-06-26T23:53:49 IST" duration-ms="1330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripgain.testscripts.TC_54_BusinessClass_VerifySearchFunctionalityForOneWay -->
+    </test> <!-- test -->
+  </suite> <!-- Suite -->
+</testng-results>

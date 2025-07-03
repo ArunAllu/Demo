@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">
+ <!-- You can change this to "firefox" or others -->
+
+  <test name="test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+     <class name="com.tripgain.testscripts.TC_01_VerifySearchFunctionalityForOneWayForTwoDay"/>
+     <class name="com.tripgain.testscripts.TC_02_VerifySearchFunctionalityForOneWayForFiveDays"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+  <test name="test1">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+     <class name="com.tripgain.testscripts.TC_03_VerifySearchFunctionalityForOneWayForTenDays"/>
+
+    </classes>
+  </test>
+   <test name="test2">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+     <class name="com.tripgain.roundtriptestscripts.TCRT_03_VerifySearchFunctionalityForRoundTripForInternationalFiveDays"/>
+
+    </classes>
+  </test>
+   
+   <test name="test3">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+
+     <class name="com.tripgain.roundtriptestscripts.TCRT_02_VerifySearchFunctionalityForRoundTripForDomesticTwoDays"/>
+     <class name="com.tripgain.roundtriptestscripts.TCRT_04_VerifySearchFunctionalityForRoundTripForDomesticFiveDays"/>
+
+
+    </classes>
+  </test>
+ <test name="test4">
+  <parameter name="browser" value="chrome"/>
+  <classes>
+
+   <class name="com.tripgain.roundtriptestscripts.TCRT_01_VerifySearchFunctionalityForRoundTripForInternationalTwoDays"/>
+   <class name="com.tripgain.testscripts.TC_04_VerifySearchFunctionalityForOneWayForTwentyDays"/>
+
+
+
+  </classes>
+ </test>
+</suite> <!-- Suite -->

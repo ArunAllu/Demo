@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="test3(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.tripgain.testscripts.TC_94_BusinessClass_VerifyFlightsSearchForLocal">
+        <methods>
+          <include name="myTest"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tripgain.testscripts.TC_94_BusinessClass_VerifyFlightsSearchForLocal -->
+    </classes>
+  </test> <!-- test3(failed) -->
+  <test thread-count="5" parallel="tests" name="test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.tripgain.testscripts.TC_63_BusinessClass_VerifyUserAbleToSlideMinimumPriceRangeSlideBar">
+        <methods>
+          <include name="myTest"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tripgain.testscripts.TC_63_BusinessClass_VerifyUserAbleToSlideMinimumPriceRangeSlideBar -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
