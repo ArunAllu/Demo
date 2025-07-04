@@ -15,6 +15,7 @@
    <parameter name="browser" value="chrome"/>
     <classes>
      <class name="com.tripgain.testscripts.TC_03_VerifySearchFunctionalityForOneWayForTenDays"/>
+     <class name="com.tripgain.testscripts.TC_04_VerifySearchFunctionalityForOneWayForTwentyDays"/>
 
     </classes>
   </test>
@@ -22,7 +23,7 @@
    <parameter name="browser" value="chrome"/>
     <classes>
      <class name="com.tripgain.roundtriptestscripts.TCRT_03_VerifySearchFunctionalityForRoundTripForInternationalFiveDays"/>
-
+     <class name="com.tripgain.roundtriptestscripts.TCRT_01_VerifySearchFunctionalityForRoundTripForInternationalTwoDays"/>
     </classes>
   </test>
    
@@ -40,8 +41,7 @@
   <parameter name="browser" value="chrome"/>
   <classes>
 
-   <class name="com.tripgain.roundtriptestscripts.TCRT_01_VerifySearchFunctionalityForRoundTripForInternationalTwoDays"/>
-   <class name="com.tripgain.testscripts.TC_04_VerifySearchFunctionalityForOneWayForTwentyDays"/>
+
 
 
 

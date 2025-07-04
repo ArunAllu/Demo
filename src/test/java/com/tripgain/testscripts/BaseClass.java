@@ -1,6 +1,5 @@
 package com.tripgain.testscripts;
 
-import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 import com.tripgain.common.EmailUtils;
@@ -36,28 +35,24 @@ public class BaseClass{
 			return driver;
 	    }
 
-	@AfterSuite
-	public void afterSuite() {
-		ExtantManager extantManager = new ExtantManager();
-		String reportPath = extantManager.getReportFilePath();
-
-		if (reportPath != null) {
-			String[] bccRecipients = {
-					"sudheer@tripgain.com","ranga@tripgain.com","ashutosh@tripgain.com"
-			};
-
-			try {
-				EmailUtils.sendReportByEmail(reportPath, bccRecipients);
-			} catch (Exception e) {
-				System.err.println("❌ Failed to send email: " + e.getMessage());
-				e.printStackTrace();
-			}
-		} else {
-			System.out.println("❌ Report not generated. Skipping email.");
-		}
-	}
-
-
+//	@AfterSuite
+//	public void afterSuite() throws InterruptedException {
+//		ExtantManager extantManager = new ExtantManager();
+//		String reportPath = extantManager.getReportFilePath();
+//
+//		if (reportPath != null) {
+//			String[] recipients = {
+//					"ammu@tripgain.com","abbu@tripgain.com","can@tripgain.com"
+//			};
+//
+//			for (String email : recipients) {
+//				EmailUtils.sendReportByEmail(reportPath, email);
+//				Thread.sleep(300);
+//			}
+//		} else {
+//			System.out.println("❌ Report not generated. Skipping email.");
+//		}
+//	}
 
 
 //		@AfterClass

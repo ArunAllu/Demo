@@ -8,7 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.tripgain.common.Log;
 import com.tripgain.common.ScreenShots;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.time.Duration;
 
 public class Tripgain_Bookingpage {
 	
@@ -20,28 +24,22 @@ public class Tripgain_Bookingpage {
 		PageFactory.initElements(driver, this);
 		this.driver=driver;
 	}
-	
-	//Method to Validate Booking Screen is Displayed
-	public void validateBookingScreenIsDisplayed(Log Log,ScreenShots ScreenShots)
+
+	public void validateBookingScreenIsDisplayed(Log Log, ScreenShots ScreenShots)
 	{
 		try {
-			Thread.sleep(4000);
-			WebElement reviewPage=driver.findElement(By.xpath("//h6[contains(text(), 'Review Your Flight')]"));
-			if(reviewPage.isDisplayed())
-			{
-				Log.ReportEvent("PASS", "Review Your Flight Page is Displayed");
-				ScreenShots.takeScreenShot();
-			}else {
-				Log.ReportEvent("FAIL", "Review Your Flight Page is Not Displayed");
-				ScreenShots.takeScreenShot();
-				Assert.fail();
-			}
-		}catch(Exception e)
-		{
-			Log.ReportEvent("FAIL", "Review Your Flight Page is Not Displayed"+ e.getMessage());
-			ScreenShots.takeScreenShot();
-			Assert.fail();
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+			WebElement reviewPage = wait.until(
+					ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[contains(text(), 'Review Your Flight')]"))
+			);
 
+			Log.ReportEvent("PASS", "Review Your Flight Page is Displayed");
+			ScreenShots.takeScreenShot();
+
+		} catch (Exception e) {
+			Log.ReportEvent("FAIL", "Review Your Flight Page is Not Displayed: " + e.getMessage());
+			ScreenShots.takeScreenShot();
+			Assert.fail("Review Your Flight Page is Not Displayed: " + e.getMessage());
 		}
 	}
 	
